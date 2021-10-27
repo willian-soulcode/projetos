@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="urna">
+        <div class="tela">
+            <div class="tela-superior">
+                <div class="tela-superior-esquerda">
+                    <div class="tela-superior-1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="tela-superior-cargo">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="tela-superior-numero">
+                        <div class="numero pisca"></div>
+                        <div class="numero"></div>
+                    </div>
+                    <div class="tela-superior-infor">
+                        Nome: CANDIDADO FULANO <br>
+                        Partido: ABC <br>
+                        Vice-Prefeito: VICE FULANO
+                    </div>
+                </div>
+                <div class="tela-superior-direita">
+                    <div class="tela-superior-imagem">
+                        <img src="images/prefeito-01.jpg" alt="">
+                        Prefeito
+                    </div>
+                    <div class="tela-superior-imagem small">
+                        <img src="images/vice-prefeito-01.jpg" alt="">
+                        Vice-Prefeito
+                    </div>
+                </div>
+                
+            </div>
+            <div class="tela-inferior">
+                Aperte a tecla: <br>
+                CONFIRMA para CONFIRMAR este voto <br>
+                CORRIGE para REINICIAR este voto
+            </div>
+        </div>
+        <div class="teclado">
+            <div class="linha">
+                <div class="botao" onclick="clicou('1')">1</div>
+                <div class="botao" onclick="clicou('2')">2</div>
+                <div class="botao" onclick="clicou('3')">3</div>
+            </div>
+            <div class="linha">
+                <div class="botao" onclick="clicou('4')">4</div>
+                <div class="botao" onclick="clicou('5')">5</div>
+                <div class="botao" onclick="clicou('6')">6</div>
+            </div>
+            <div class="linha">
+                <div class="botao" onclick="clicou('7')">7</div>
+                <div class="botao" onclick="clicou('8')">8</div>
+                <div class="botao" onclick="clicou('9')">9</div>
+            </div>
+            <div class="linha">
+                <div class="botao" onclick="clicou('0')">0</div>
+            </div>
+            <div class="linha">
+                <div class="botao branco" onclick="branco()">BRANCO</div>
+                <div class="botao corrige" onclick="corrige()">CORRIGE</div>
+                <div class="botao confirma" onclick="confirma()">CONFIRMA</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="etapas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
