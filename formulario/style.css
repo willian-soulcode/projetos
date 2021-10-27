@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.tela{
+    display: flex;
+    height: 100vh;
+}
+
+.esquerda{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda img{
+    min-width:80%;
+    max-width: 100%;
+}
+
+.direita{
+    min-width: 40%;
+    background-color:#019B9D;
+    padding: 50px;
+}
+
+.direita label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.direita input{
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
+}
+
+.error{
+    font-size: 11px;
+    background-color: red;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+    margin-top: 0;
+}
