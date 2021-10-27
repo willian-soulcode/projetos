@@ -10,6 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
 }
 
 .urna{
@@ -174,4 +175,24 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+.legenda{  
+    display: flex;
+    width: 900px;
+}
+
+.coluna{
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    background-color: #e8e8e8;
+}
+
+.legenda li{
+    margin: 10px 0;
+    background-color: white;
+    padding: 5px;
+    display: flex;
 }
